@@ -7,6 +7,7 @@ sudo chown -R vagrant /var/www/html
 sudo ln -s /usr/bin/perl /usr/local/bin/perl
 sudo rm -rf /var/www/html
 sudo ln -fs /vagrant/html /var/www/html
+sudo yum -y install php php-mbstring php-mysql
 sudo /etc/rc.d/init.d/httpd start
 sudo chkconfig httpd on
 
